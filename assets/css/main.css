@@ -247,6 +247,38 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Styling for icon
+--------------------------------------------------------------*/
+
+.social-links .social-icon {
+  display: inline-block;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.social-links .social-icon i {
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.social-links .social-icon img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.social-links .itch-icon img {
+  filter: grayscale(100%) brightness(0%) invert(1);
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 .mobile-nav-toggle {
@@ -1204,6 +1236,21 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.portfolio-img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: ocntain;
+  display:block;
+  margin: 0 auto;
+}
+
+#project-link a {
+  color: inherit;
+  text-decoration: underline;
+  color: #0066CC;
+  font-weight: normal;
 }
 
 /*--------------------------------------------------------------
