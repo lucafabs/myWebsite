@@ -14,10 +14,16 @@ const projects = {
         tech: ["Unity animation trees", "GitHub version control", "Project management & risk analysis"]
     },
     networkedslime: {
-        title: "Networked Slime",
+        title: "Networked Slime Project",
         image: "assets/img/portfolio/networkedslime.png",
         description: "A networked game utilizing Unity Netcode for GameObjects.",
         tech: ["Netcode", "Client-Server interactions", "PHP & SQL"]
+    },
+    machinelearning: {
+        title: "Feed Forward Network Project",
+        image: "assets/img/portfolio/machinelearning.png",
+        description: "For this assignment, I built a Feed Forward Network from scratch in Python. We were only allowed to use NumPy for matrix operations, and no other libraries. This project's focus was tinkering with a Feed Forward Network to further my understanding of how they achieve convergence. The impacts of parameter values, use cases for different activation functions, and generalization vs memorization were all considerations.",
+        tech: ["Understanding of network architecure", "Matrix manipulation", "Experimental evaluation", "Understanding how neural networks operate", "Technical skills writing reports in LaTeX"]
     }
 }
 
@@ -48,7 +54,7 @@ if (project) {
         //a.className = "btn btn-primary mt-3";
         linkContainer.appendChild(a);
     } else {
-        linkContainer.style.display = "none";
+        document.getElementById("project-url-item").style.display = "none";
     }
     } else {
     document.getElementById("project-title").textContent = "Project Not Found";
