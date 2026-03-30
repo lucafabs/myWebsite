@@ -2,7 +2,7 @@ const projects = {
     maidmayhem: {
         title: "Maid Mayhem",
         image: "assets/img/portfolio/maidmayhem.png",
-        link: "https://www.instagram.com/patchdup_games/",
+        link: "https://store.steampowered.com/app/4329840/Maid_Mayhem/",
         description: "Maid Mayhem is a 2-4 player 3D Action Party game. Players compete as buff maids in a 3-minute match to clean the most parts of a dirty house. They utilize cleaning tools spawned around the house to attack each other and clean Twiggy's house.",
         tech: ["Unity Physics Engine", "Event driven codebase", "Local Multiplayer", "Code refactoring to meet standards"]
     },
