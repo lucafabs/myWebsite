@@ -5,7 +5,7 @@ const projects = {
         link: "https://store.steampowered.com/app/4329840/Maid_Mayhem/",
         article: "https://brocku.ca/brock-news/2026/04/student-video-games-score-high-praise-at-toronto-showcase/",
         description: `Maid Mayhem is a 2-4 player, 3D Action Party game. Players compete as buff maids in a 3-minute match to clean the most parts of a dirty house. They utilize cleaning tools spawned around the house to attack each other and clean Twiggy's house. 
-    <strong>Placed 1st in Player's Choice and 2nd in Audio at Level Up Student Showcase 2026.</strong>`,
+    <strong>Placed 1st in People's Choice and 2nd in Audio at Level Up Student Showcase 2026.</strong>`,
         tech: ["Unity Physics Engine", "Collaboration and communication as part of an 11 person team", "Event driven codebase", "Local Multiplayer", "Code refactoring to meet standards"]
     },
     porcelain: {
