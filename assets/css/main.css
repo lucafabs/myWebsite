@@ -1255,7 +1255,8 @@ section,
   margin: 0 auto;
 }
 
-#project-link a {
+#project-link a,
+#project-article a {
   color: inherit;
   text-decoration: underline;
   color: #0066CC;

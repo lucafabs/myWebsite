@@ -3,8 +3,10 @@ const projects = {
         title: "Maid Mayhem",
         image: "assets/img/portfolio/maidmayhem.png",
         link: "https://store.steampowered.com/app/4329840/Maid_Mayhem/",
-        description: "Maid Mayhem is a 2-4 player 3D Action Party game. Players compete as buff maids in a 3-minute match to clean the most parts of a dirty house. They utilize cleaning tools spawned around the house to attack each other and clean Twiggy's house.",
-        tech: ["Unity Physics Engine", "Event driven codebase", "Local Multiplayer", "Code refactoring to meet standards"]
+        article: "https://brocku.ca/brock-news/2026/04/student-video-games-score-high-praise-at-toronto-showcase/",
+        description: `Maid Mayhem is a 2-4 player, 3D Action Party game. Players compete as buff maids in a 3-minute match to clean the most parts of a dirty house. They utilize cleaning tools spawned around the house to attack each other and clean Twiggy's house. 
+    <strong>Placed 1st in Player's Choice and 2nd in Audio at Level Up Student Showcase 2026.</strong>`,
+        tech: ["Unity Physics Engine", "Collaboration and communication as part of an 11 person team", "Event driven codebase", "Local Multiplayer", "Code refactoring to meet standards"]
     },
     porcelain: {
         title: "Porcelain",
@@ -33,7 +35,7 @@ const project = projects[projectId]
 
 if (project) {
     document.getElementById("project-title").textContent = project.title;
-    document.getElementById("project-description").textContent = project.description;
+    document.getElementById("project-description").innerHTML = project.description;
     document.getElementById("project-image").src = project.image;
 
     const techList = document.getElementById("project-tech");
@@ -56,6 +58,18 @@ if (project) {
     } else {
         document.getElementById("project-url-item").style.display = "none";
     }
+    const articleContainer = document.getElementById("project-article");
+
+    if (project.article) {
+        const a = document.createElement("a");
+        a.href = project.article;
+        a.target = "_blank";
+        a.textContent = project.article;
+        articleContainer.appendChild(a);
+    } else {
+    document.getElementById("project-article-item").style.display = "none";
+    }
+    
     } else {
     document.getElementById("project-title").textContent = "Project Not Found";
 }
